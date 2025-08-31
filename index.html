@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe-Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Hub</h1>
+        <p>Find the perfect recipe in seconds and make cooking easy.</p>
+        <div class="search-cont">
+            <input class="search" placeholder="Search your recipe">
+            <button onclick="searchRecipes()" class="search-btn">Search</button>
+        </div>
+        <div class="notfound" id="notfound"></div>
+
+    </div>
+    <div class="recipes" id="recipes"></div>
+    <div class="pop-up-card">
+        <button onclick="closeRecipe()" class="closebtn">Close</button>
+        <h2 class="recipe-title"></h2>
+        <p class="recipe-details"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
